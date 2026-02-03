@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Ethiopian Calendar</title>
+</head>
+<body class="flex justify-center items-center bg-[#0f172a] min-h-screen p-4">
+
+<div class="calendar bg-[#020617] text-white flex flex-col w-full min-w-[280px] max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl border border-gray-700 rounded-lg p-5">
+
+    <header class="mb-5 flex flex-col gap-2">
+        <h1 id="month" class="text-lg font-bold">Month, year</h1>
+        <p id="date" class="text-gray-400 font-semibold">Date</p>
+    </header>
+
+    <div class="week-days flex text-gray-500 text-sm mb-4">
+        <span class="flex-1 text-center">እሁድ</span>
+        <span class="flex-1 text-center">ሰኞ</span>
+        <span class="flex-1 text-center">ማክሰኞ</span>
+        <span class="flex-1 text-center">ረቡዕ</span>
+        <span class="flex-1 text-center">ሐሙስ</span>
+        <span class="flex-1 text-center">አርብ</span>
+        <span class="flex-1 text-center">ቅዳሜ</span>
+    </div>
+
+    <div id="days" class="grid grid-cols-7 gap-2">
+        <!-- Days will be populated here -->
+    </div>
+
+
+</div>
+
+  <script src="index.js"></script>
+</body>
+</html>
